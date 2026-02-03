@@ -1,0 +1,769 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Michael Choi - Localization Portfolio</title>
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Fonts: DM Serif Display & Manrope -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700&family=DM+Serif+Display:ital@0;1&display=swap" rel="stylesheet">
+    
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+
+    <!-- Custom Config -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Manrope', 'sans-serif'],
+                        serif: ['DM Serif Display', 'serif'],
+                    },
+                    colors: {
+                        accent: {
+                            DEFAULT: '#C72C41', // Primary Red
+                            light: '#F5F5F5',   // Off-White Background
+                            dark: '#A50034',    // Dark Burgundy
+                            gray: '#D9D9D9',    // Structural Gray
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        /* Smooth Scrolling */
+        html {
+            scroll-behavior: smooth;
+        }
+        
+        /* Fade In Animation Classes */
+        .fade-in-section {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 0.7s ease-out, transform 0.7s ease-out;
+            will-change: opacity, visibility;
+        }
+        .fade-in-section.is-visible {
+            opacity: 1;
+            transform: none;
+        }
+
+        /* Custom Selection Color */
+        ::selection {
+            background: #C72C41;
+            color: white;
+        }
+    </style>
+</head>
+<body class="bg-white text-gray-900 antialiased selection:bg-accent selection:text-white">
+
+    <!-- HERO SECTION -->
+    <section class="pt-32 pb-20 px-6 max-w-7xl mx-auto fade-in-section">
+        <div class="max-w-4xl">
+            <p class="text-accent font-bold tracking-widest uppercase mb-6 text-lg">Game Localization Specialist</p>
+            
+            <h1 class="text-6xl md:text-8xl font-serif text-gray-900 mb-8 leading-[1.05]">
+                Connecting worlds <br/>
+                <span class="text-transparent bg-clip-text bg-gradient-to-r from-gray-900 to-gray-500 italic">through language.</span>
+            </h1>
+
+            <p class="text-xl md:text-2xl text-gray-600 mb-12 max-w-xl leading-relaxed font-medium">
+                Localization strategy, creative translation, and rigorous quality assurance for immersive, player-focused gaming experiences.
+            </p>
+        </div>
+    </section>
+
+    <!-- ABOUT ME SECTION -->
+    <section class="py-20 px-6 max-w-7xl mx-auto fade-in-section">
+        <div class="bg-white rounded-3xl p-8 md:p-12 shadow-xl shadow-gray-100/50 border border-gray-100">
+            
+            <!-- Top Row: Image & Bio -->
+            <div class="grid md:grid-cols-12 gap-12 items-center mb-16">
+                <!-- Image -->
+                <div class="md:col-span-5 lg:col-span-4">
+                    <div class="relative aspect-[3/4] rounded-2xl overflow-hidden shadow-lg group bg-gray-200">
+                         <!-- Cat Profile Picture -->
+                        <img src="https://media.licdn.com/dms/image/v2/D5603AQHY4mjgEilVoA/profile-displayphoto-crop_800_800/B56ZwibiHhHIAI-/0/1770104170532?e=1771459200&v=beta&t=-9Zf22TEZ49W5lHUHd4FQV-63J08aryy1XAyck-9bLQ" alt="Michael Choi" class="object-cover w-full h-full transition-all duration-500">
+                        <div class="absolute inset-0 bg-gradient-to-t from-accent/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity"></div>
+                    </div>
+                </div>
+
+                <!-- Text Content -->
+                <div class="md:col-span-7 lg:col-span-8">
+                    <h1 class="text-5xl font-serif text-gray-900 mb-4 tracking-tight">Michael Choi</h1>
+                    
+                    <div class="flex flex-wrap items-center gap-3 text-sm font-bold text-accent mb-8 uppercase tracking-widest">
+                        <span>KO-EN / EN-KO</span>
+                        <span class="w-1.5 h-1.5 bg-accent rounded-full"></span>
+                        <span>10+ Years Exp</span>
+                        <span class="w-1.5 h-1.5 bg-accent rounded-full"></span>
+                        <span>Game Localization</span>
+                    </div>
+
+                    <p class="text-xl text-gray-700 leading-relaxed font-medium mb-8">
+                        <strong>Localization expert</strong>, <strong>cultural bridge builder</strong>, and <strong>lifetime gamer</strong> with over 10 years of experience delivering English localization for large-scale PC and console games. Experienced in narrative adaptation, system texts, marketing content, and voice-over production, with a strong focus on quality, consistency, and player experience.
+                    </p>
+                    
+                    <div class="flex gap-6">
+                        <a href="https://www.linkedin.com/" target="_blank" class="inline-block text-gray-400 hover:text-[#0077b5] transition-all duration-300 hover:scale-110" aria-label="LinkedIn">
+                            <i data-lucide="linkedin" class="w-8 h-8"></i>
+                        </a>
+                        <a href="mailto:hello@michaelchoi.com" class="inline-block text-gray-400 hover:text-yellow-500 transition-all duration-300 hover:scale-110" aria-label="Email">
+                            <i data-lucide="mail" class="w-8 h-8"></i>
+                        </a>
+                        <a href="#" class="inline-block text-gray-400 hover:text-green-600 transition-all duration-300 hover:scale-110" aria-label="Phone">
+                            <i data-lucide="phone" class="w-8 h-8"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Bottom Row: 3 Role Boxes -->
+            <div class="grid md:grid-cols-3 gap-6">
+                <!-- Box 1: Translator -->
+                <div class="bg-accent-light p-8 rounded-2xl border border-accent-gray/50 text-center hover:border-accent/50 hover:bg-white transition-all duration-300 group shadow-sm">
+                    <div class="w-14 h-14 bg-white rounded-full flex items-center justify-center mx-auto mb-6 text-accent shadow-sm group-hover:scale-110 transition-transform border border-accent-gray/30">
+                        <i data-lucide="languages" class="w-7 h-7"></i>
+                    </div>
+                    <h3 class="font-serif text-2xl text-gray-900 mb-2">Translator</h3>
+                    <p class="text-sm text-gray-500 font-medium uppercase tracking-wide">Creative Adaptation</p>
+                </div>
+
+                <!-- Box 2: Project Manager -->
+                <div class="bg-accent-light p-8 rounded-2xl border border-accent-gray/50 text-center hover:border-accent/50 hover:bg-white transition-all duration-300 group shadow-sm">
+                    <div class="w-14 h-14 bg-white rounded-full flex items-center justify-center mx-auto mb-6 text-accent shadow-sm group-hover:scale-110 transition-transform border border-accent-gray/30">
+                        <i data-lucide="kanban" class="w-7 h-7"></i>
+                    </div>
+                    <h3 class="font-serif text-2xl text-gray-900 mb-2">Project Manager</h3>
+                    <p class="text-sm text-gray-500 font-medium uppercase tracking-wide">Workflow Strategy</p>
+                </div>
+
+                <!-- Box 3: Localization Team Lead -->
+                <div class="bg-accent-light p-8 rounded-2xl border border-accent-gray/50 text-center hover:border-accent/50 hover:bg-white transition-all duration-300 group shadow-sm">
+                    <div class="w-14 h-14 bg-white rounded-full flex items-center justify-center mx-auto mb-6 text-accent shadow-sm group-hover:scale-110 transition-transform border border-accent-gray/30">
+                        <i data-lucide="users" class="w-7 h-7"></i>
+                    </div>
+                    <h3 class="font-serif text-2xl text-gray-900 mb-2">Localization Team Lead</h3>
+                    <p class="text-sm text-gray-500 font-medium uppercase tracking-wide">Cross-Functional Leadership</p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- PROFESSIONAL EXPERIENCE SECTION -->
+    <section class="py-20 px-6 max-w-7xl mx-auto fade-in-section">
+        <div class="mb-16">
+            <h2 class="text-4xl md:text-5xl font-serif text-gray-900 mb-4">Professional Experience</h2>
+            <p class="text-xl text-gray-500 font-light">A timeline of leadership and hands-on expertise.</p>
+        </div>
+
+        <div class="space-y-16">
+            <!-- Kakao Games -->
+            <div class="grid md:grid-cols-12 gap-6 md:gap-12">
+                <div class="md:col-span-4 lg:col-span-3">
+                    <img src="https://play-lh.googleusercontent.com/GP-qRrfaS4u67LeReky8i4MQehEM_OvG9LawVj2Ws_kZYGw93g2VWB-0Cik8mTqkwXI" alt="Kakao Games" class="w-32 h-32 mb-6 rounded-xl shadow-sm border border-gray-100 object-cover">
+                    <h3 class="text-2xl font-bold text-gray-900">Kakao Games</h3>
+                    <p class="text-accent font-bold uppercase text-sm tracking-widest mt-2">June 2024 – Present</p>
+                </div>
+                <div class="md:col-span-8 lg:col-span-9 border-l-2 border-accent-gray/30 pl-8 md:pl-12 py-1">
+                    <h4 class="text-xl font-serif text-gray-800 mb-6">Lead Localization Specialist</h4>
+                    <ul class="space-y-4 text-gray-600 leading-relaxed list-disc list-outside ml-4 font-medium">
+                        <li>English localization for <strong>Chrono Odyssey</strong> and <strong>ArcheAge Chronicles</strong>, covering UI, narrative, gameplay systems, and marketing text.</li>
+                        <li>Localized and adapted marketing content to align with North American markets.</li>
+                        <li>Coordinated VO sessions, including subtitle production, voice casting, and in-session feedback.</li>
+                        <li>Streamlined LQA and narrative review pipelines to reduce redundancy and improve turnaround time.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- 2bytes -->
+            <div class="grid md:grid-cols-12 gap-6 md:gap-12">
+                <div class="md:col-span-4 lg:col-span-3">
+                    <img src="https://miro.medium.com/v2/resize:fill:160:160/1*NoCAgiRk6dvhFOMD_I22gA.png" alt="2bytes" class="w-32 h-32 mb-6 rounded-xl shadow-sm border border-gray-100 object-cover">
+                    <h3 class="text-2xl font-bold text-gray-900">2bytes</h3>
+                    <p class="text-accent font-bold uppercase text-sm tracking-widest mt-2">July 2020 – June 2024</p>
+                </div>
+                <div class="md:col-span-8 lg:col-span-9 border-l-2 border-accent-gray/30 pl-8 md:pl-12 py-1">
+                    <h4 class="text-xl font-serif text-gray-800 mb-6">Localization Team Lead & Project Manager</h4>
+                    <ul class="space-y-4 text-gray-600 leading-relaxed list-disc list-outside ml-4 font-medium">
+                        <li>Led and mentored a mid-size localization team of 12 members, while also taking ownership of hands-on translation and editing for key deliverables.</li>
+                        <li>Delivered end-to-end localization across PC, console, and mobile titles, including multiple high-profile projects.</li>
+                        <li>Managed budgets, schedules, and vendor relationships to optimize cost and efficiency.</li>
+                        <li>Partnered with global gaming studios and publishers (CCP, 505 Games, 2K) to ensure quality and market-appropriate localization.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Pearl Abyss -->
+            <div class="grid md:grid-cols-12 gap-6 md:gap-12">
+                <div class="md:col-span-4 lg:col-span-3">
+                    <img src="https://media.licdn.com/dms/image/v2/D560BAQGYr0ngBJ_5Wg/company-logo_200_200/company-logo_200_200/0/1723537646666/pearl_abyss_logo?e=2147483647&v=beta&t=h__TynA7Pj3s_drdU0NVLPUQ7KWuB_UxCr67TaEehac" alt="Pearl Abyss" class="w-32 h-32 mb-6 rounded-xl shadow-sm border border-gray-100 object-cover">
+                    <h3 class="text-2xl font-bold text-gray-900">Pearl Abyss</h3>
+                    <p class="text-accent font-bold uppercase text-sm tracking-widest mt-2">April 2019 – July 2020</p>
+                </div>
+                <div class="md:col-span-8 lg:col-span-9 border-l-2 border-accent-gray/30 pl-8 md:pl-12 py-1">
+                    <h4 class="text-xl font-serif text-gray-800 mb-6">Lead Localization Specialist & Project Manager</h4>
+                    <ul class="space-y-4 text-gray-600 leading-relaxed list-disc list-outside ml-4 font-medium">
+                        <li>Managed localization workflows for <strong>EVE Online</strong>, delivering UI, UX, narrative, and systems text aligned with product and player experience expectations.</li>
+                        <li>Developed style guides, glossaries, review checklists, and QA frameworks to reduce inconsistency.</li>
+                        <li>Managed schedules and workflows while coordinating with external localization agencies.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Freelance Translator -->
+            <div class="grid md:grid-cols-12 gap-6 md:gap-12">
+                <div class="md:col-span-4 lg:col-span-3">
+                    <div class="w-32 h-32 mb-6 rounded-xl shadow-sm border border-gray-100 bg-gray-50 flex items-center justify-center text-accent">
+                        <i data-lucide="briefcase" class="w-12 h-12"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-gray-900">Freelance Translator</h3>
+                    <p class="text-accent font-bold uppercase text-sm tracking-widest mt-2">June 2015 – April 2019</p>
+                </div>
+                <div class="md:col-span-8 lg:col-span-9 border-l-2 border-accent-gray/30 pl-8 md:pl-12 py-1">
+                    <h4 class="text-xl font-serif text-gray-800 mb-6">Freelance Translator</h4>
+                    <ul class="space-y-4 text-gray-600 leading-relaxed list-disc list-outside ml-4 font-medium">
+                        <li>Provided translation and interpretation for game, publishing, and marketing projects in collaboration with localization agencies, publishers, and broadcasters.</li>
+                        <li>Localized games, subtitles, marketing materials, novels, and art books from English to Korean, ensuring cultural relevance and consistency across content.</li>
+                        <li>Contributed to high-profile game projects across multiple genres and platforms. (100+ projects)</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FEATURED WORK SUMMARY (Grid) -->
+    <section id="work" class="py-24 px-6 max-w-7xl mx-auto">
+        <div class="mb-16 border-b border-gray-100 pb-8 fade-in-section">
+            <h2 class="text-4xl md:text-5xl font-serif text-gray-900 mb-4">Featured Projects</h2>
+            <p class="text-xl text-gray-500 font-medium">Selected works across AAA MMORPGs (PC, Console)</p>
+        </div>
+
+        <div class="grid md:grid-cols-3 gap-12">
+            <!-- Card 1 -->
+            <a href="#chrono" class="group block fade-in-section text-center">
+                <div class="aspect-video bg-gray-100 rounded-2xl overflow-hidden mb-6 relative shadow-sm group-hover:shadow-md transition-all duration-300">
+                    <img src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2873440/ss_e751db5e229413f520c06c6acd845b3585da8cae.1920x1080.jpg?t=1762754134" alt="Chrono Odyssey" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700">
+                    <div class="absolute inset-0 bg-black/10 group-hover:bg-black/0 transition-colors"></div>
+                </div>
+                <h3 class="text-3xl font-serif text-gray-900 mb-2 group-hover:text-accent transition-colors">Chrono Odyssey</h3>
+                <p class="text-accent font-bold text-sm uppercase tracking-widest">Lead Localization Specialist</p>
+            </a>
+
+            <!-- Card 2 -->
+            <a href="#archeage" class="group block fade-in-section text-center" style="transition-delay: 100ms;">
+                <div class="aspect-video bg-gray-100 rounded-2xl overflow-hidden mb-6 relative shadow-sm group-hover:shadow-md transition-all duration-300">
+                    <img src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3218230/ss_68ffe4125cf76539f9193a4fadfa9c7361ea52f9.1920x1080.jpg?t=1756696651" alt="ArcheAge Chronicles" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700">
+                    <div class="absolute inset-0 bg-black/10 group-hover:bg-black/0 transition-colors"></div>
+                </div>
+                <h3 class="text-3xl font-serif text-gray-900 mb-2 group-hover:text-accent transition-colors">ArcheAge Chronicles</h3>
+                <p class="text-accent font-bold text-sm uppercase tracking-widest">Localization Specialist</p>
+            </a>
+
+            <!-- Card 3 -->
+            <a href="#eve" class="group block fade-in-section text-center" style="transition-delay: 200ms;">
+                <div class="aspect-video bg-gray-100 rounded-2xl overflow-hidden mb-6 relative shadow-sm group-hover:shadow-md transition-all duration-300">
+                    <img src="https://cdn2.unrealengine.com/eve-online-1920x1080-63abdd7114f4.png" alt="EVE Online" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700">
+                    <div class="absolute inset-0 bg-black/10 group-hover:bg-black/0 transition-colors"></div>
+                </div>
+                <h3 class="text-3xl font-serif text-gray-900 mb-2 group-hover:text-accent transition-colors">EVE Online</h3>
+                <p class="text-accent font-bold text-sm uppercase tracking-widest">Lead Localization Specialist & PM</p>
+            </a>
+        </div>
+    </section>
+
+    <!-- PROJECT 1: CHRONO ODYSSEY -->
+    <section id="chrono" class="py-24 px-6 max-w-7xl mx-auto border-t border-gray-100">
+        <!-- New Banner Layout with Text Inside Image -->
+        <div class="relative w-full h-[500px] rounded-3xl overflow-hidden shadow-2xl mb-16 group">
+            <img src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2873440/ss_e751db5e229413f520c06c6acd845b3585da8cae.1920x1080.jpg?t=1762754134" alt="Chrono Odyssey Background" class="object-cover w-full h-full transition-transform duration-700 group-hover:scale-105">
+            <!-- Gradient Overlay for Readability -->
+            <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/20 to-transparent"></div>
+            <!-- Text Content Positioned Inside -->
+            <div class="absolute bottom-0 left-0 w-full p-8 md:p-12">
+                <span class="inline-block px-3 py-1 bg-accent text-white text-xs font-bold rounded-full uppercase mb-4 tracking-widest shadow-sm">MMORPG • Console/PC</span>
+                <h2 class="text-5xl md:text-7xl font-serif text-white mb-3 tracking-tight drop-shadow-md">Chrono Odyssey</h2>
+                <p class="text-xl md:text-2xl text-gray-200 font-medium drop-shadow-sm">Lead Localization Specialist</p>
+            </div>
+        </div>
+
+        <!-- Content -->
+        <div class="grid lg:grid-cols-12 gap-16">
+            <div class="lg:col-span-4 fade-in-section">
+                <h3 class="text-sm font-bold text-accent uppercase tracking-widest mb-4">The Challenge</h3>
+                <p class="text-xl font-serif text-gray-600 leading-snug mb-8">
+                    Blending cosmic horror and fantasy into a cohesive English tone while keeping character voices consistent, natural, and readable.
+                </p>
+                
+                <!-- Trailer Embed with Clickable Image -->
+                <div>
+                    <span class="text-xs font-bold text-gray-400 uppercase tracking-wider mb-3 block">Localized Trailer</span>
+                    <a href="https://youtu.be/vm3k7r4D5ZI" target="_blank" class="aspect-video rounded-xl overflow-hidden shadow-lg border border-gray-100 bg-gray-50 flex items-center justify-center relative group block hover:bg-gray-100 transition-colors">
+                        <i data-lucide="play-circle" class="w-16 h-16 text-gray-300 group-hover:text-accent transition-colors duration-300"></i>
+                    </a>
+                    <div class="mt-2 flex justify-end items-center">
+                        <a href="https://youtu.be/vm3k7r4D5ZI" target="_blank" class="text-xs font-bold text-accent hover:text-accent-dark flex items-center">
+                            Watch on YouTube <i data-lucide="external-link" class="w-3 h-3 ml-1"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="lg:col-span-8 fade-in-section">
+                <!-- Renamed from Scope of Work -->
+                <h3 class="text-3xl font-serif text-gray-900 mb-8">Responsibilities</h3>
+                <div class="space-y-10">
+                    <!-- Translation & Editing -->
+                    <div class="flex items-start group">
+                        <div class="shrink-0 mr-6">
+                            <div class="w-14 h-14 rounded-full bg-accent-light flex items-center justify-center text-accent group-hover:bg-accent group-hover:text-white transition-colors duration-300">
+                                <i data-lucide="languages" class="w-7 h-7"></i>
+                            </div>
+                        </div>
+                        <div>
+                            <h4 class="text-xl font-bold text-gray-900 mb-2">Translation & Editing</h4>
+                            <p class="text-gray-600 leading-relaxed text-lg">
+                                Translated and edited in-game and out-of-game content, including core narrative scripts.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Voice Overs -->
+                    <div class="flex items-start group">
+                        <div class="shrink-0 mr-6">
+                            <div class="w-14 h-14 rounded-full bg-accent-light flex items-center justify-center text-accent group-hover:bg-accent group-hover:text-white transition-colors duration-300">
+                                <i data-lucide="mic" class="w-7 h-7"></i>
+                            </div>
+                        </div>
+                        <div>
+                            <h4 class="text-xl font-bold text-gray-900 mb-2">Voice Overs</h4>
+                            <p class="text-gray-600 leading-relaxed text-lg">
+                                Managed the full VO pipeline, from studio casting and script translation to in-session direction, final QA, and localized trailer production.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Fandom Wiki -->
+                    <div class="flex items-start group">
+                        <div class="shrink-0 mr-6">
+                            <div class="w-14 h-14 rounded-full bg-accent-light flex items-center justify-center text-accent group-hover:bg-accent group-hover:text-white transition-colors duration-300">
+                                <i data-lucide="globe" class="w-7 h-7"></i>
+                            </div>
+                        </div>
+                        <div>
+                            <h4 class="text-xl font-bold text-gray-900 mb-2">Fandom Wiki</h4>
+                            <p class="text-gray-600 leading-relaxed text-lg mb-3">
+                                Helped build and maintain the game’s Fandom Wiki with lore and gameplay information. Defined what content to include, aligned the structure with the dev team, and provided translations.
+                            </p>
+                            <a href="https://chrono-odyssey.fandom.com/wiki/Chrono_Odyssey_Wiki" target="_blank" class="text-sm font-bold text-accent hover:text-accent-dark flex items-center">
+                                Visit Wiki <i data-lucide="external-link" class="w-3 h-3 ml-1"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PROJECT 2: ARCHEAGE CHRONICLES -->
+    <section id="archeage" class="py-24 px-6 max-w-7xl mx-auto border-t border-gray-100">
+        <!-- New Banner Layout with Text Inside Image -->
+        <div class="relative w-full h-[500px] rounded-3xl overflow-hidden shadow-2xl mb-16 group">
+            <!-- Updated src with the provided Steam URL -->
+            <img src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3218230/ss_68ffe4125cf76539f9193a4fadfa9c7361ea52f9.1920x1080.jpg?t=1756696651" onerror="this.src='https://images.unsplash.com/photo-1519074069444-1ba4fff66d16?q=80&w=2544&auto=format&fit=crop'" alt="ArcheAge Background" class="object-cover w-full h-full transition-transform duration-700 group-hover:scale-105">
+            <!-- Gradient Overlay -->
+            <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/20 to-transparent"></div>
+            <!-- Text Content Positioned Inside -->
+            <div class="absolute bottom-0 left-0 w-full p-8 md:p-12">
+                <span class="inline-block px-3 py-1 bg-accent text-white text-xs font-bold rounded-full uppercase mb-4 tracking-widest shadow-sm">RPG • PC/Console</span>
+                <h2 class="text-5xl md:text-7xl font-serif text-white mb-3 tracking-tight drop-shadow-md">ArcheAge Chronicles</h2>
+                <p class="text-xl md:text-2xl text-gray-200 font-medium drop-shadow-sm">Localization Specialist</p>
+            </div>
+        </div>
+
+        <div class="grid lg:grid-cols-12 gap-16">
+            <div class="lg:col-span-4 fade-in-section">
+                <h3 class="text-sm font-bold text-accent uppercase tracking-widest mb-4">The Challenge</h3>
+                <div class="space-y-6 text-lg text-gray-600 leading-relaxed">
+                    <p>
+                        Establishing a consistent localization style for an actively developing project, where content and terminology changed frequently.
+                    </p>
+                    <p>
+                        Simultaneously, the localization needed to retain a narrative connection to the ArcheAge franchise while introducing a fresh tone, and to refine or replace legacy terms and stylistic choices that no longer felt natural in English.
+                    </p>
+                </div>
+            </div>
+            <div class="lg:col-span-8 fade-in-section">
+                <h3 class="text-3xl font-serif text-gray-900 mb-8">Responsibilities</h3>
+                <div class="space-y-10">
+                    <!-- 1. Style Guides -->
+                    <div class="flex items-start group">
+                        <div class="shrink-0 mr-6">
+                            <div class="w-14 h-14 rounded-full bg-accent-light flex items-center justify-center text-accent group-hover:bg-accent group-hover:text-white transition-colors duration-300">
+                                <i data-lucide="book-text" class="w-7 h-7"></i>
+                            </div>
+                        </div>
+                        <div>
+                            <h4 class="text-xl font-bold text-gray-900 mb-2">Style Guides</h4>
+                            <p class="text-gray-600 leading-relaxed text-lg">
+                                Developed comprehensive glossaries and localization style guides to ensure consistency across all localized content throughout development.
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <!-- 2. Skill Translation Review -->
+                    <div class="flex items-start group">
+                        <div class="shrink-0 mr-6">
+                            <div class="w-14 h-14 rounded-full bg-accent-light flex items-center justify-center text-accent group-hover:bg-accent group-hover:text-white transition-colors duration-300">
+                                <i data-lucide="file-search" class="w-7 h-7"></i>
+                            </div>
+                        </div>
+                        <div>
+                            <h4 class="text-xl font-bold text-gray-900 mb-2">Skill Translation Review</h4>
+                            <p class="text-gray-600 leading-relaxed text-lg">
+                                Reviewed skill translations to preserve the original design intent while improving clarity, readability, and impact for an English-speaking audience.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PROJECT 3: EVE ONLINE -->
+    <section id="eve" class="py-24 px-6 max-w-7xl mx-auto border-t border-gray-100">
+        <!-- New Banner Layout with Text Inside Image -->
+        <div class="relative w-full h-[500px] rounded-3xl overflow-hidden shadow-2xl mb-16 group">
+            <img src="https://cdn2.unrealengine.com/eve-online-1920x1080-63abdd7114f4.png" alt="EVE Online Background" class="object-cover w-full h-full transition-transform duration-700 group-hover:scale-105">
+            <!-- Gradient Overlay -->
+            <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/20 to-transparent"></div>
+            <!-- Text Content Positioned Inside -->
+            <div class="absolute bottom-0 left-0 w-full p-8 md:p-12">
+                <span class="inline-block px-3 py-1 bg-accent text-white text-xs font-bold rounded-full uppercase mb-4 tracking-widest shadow-sm">MMORPG • PC • Live Ops</span>
+                <h2 class="text-5xl md:text-7xl font-serif text-white mb-3 tracking-tight drop-shadow-md">EVE Online</h2>
+                <p class="text-xl md:text-2xl text-gray-200 font-medium drop-shadow-sm">Lead Localization Specialist & PM</p>
+            </div>
+        </div>
+
+        <div class="grid lg:grid-cols-12 gap-16">
+            <div class="lg:col-span-4 fade-in-section">
+                <h3 class="text-sm font-bold text-accent uppercase tracking-widest mb-4">The Challenge</h3>
+                <div class="space-y-6 text-lg text-gray-600 leading-relaxed">
+                    <p class="font-medium text-gray-900">
+                        Delivering a 3 million word localization project within an eight-month timeframe, covering translation, review, and LQA.
+                    </p>
+                    <p>
+                        With the game live for over 18 years, the work required balancing modernization with terminology familiar to long-time players, while strictly adhering to established science fiction conventions to maintain consistency and immersion.
+                    </p>
+                </div>
+            </div>
+            <div class="lg:col-span-8 fade-in-section">
+                <h3 class="text-3xl font-serif text-gray-900 mb-8">Responsibilities</h3>
+                <div class="space-y-10">
+                    <!-- 1. Resource Management -->
+                    <div class="flex items-start group">
+                        <div class="shrink-0 mr-6">
+                            <div class="w-14 h-14 rounded-full bg-accent-light flex items-center justify-center text-accent group-hover:bg-accent group-hover:text-white transition-colors duration-300">
+                                <i data-lucide="calendar-clock" class="w-7 h-7"></i>
+                            </div>
+                        </div>
+                        <div>
+                            <h4 class="text-xl font-bold text-gray-900 mb-2">Resource Management</h4>
+                            <p class="text-gray-600 leading-relaxed text-lg">
+                                Designed and executed a production schedule capable of completing the project within eight months despite limited resources. Coordinated workflows between one global vendor and one domestic vendor, managing close collaboration between outsourced and in-house translators, reviewers, and testers.
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <!-- 2. Translation and Review -->
+                    <div class="flex items-start group">
+                        <div class="shrink-0 mr-6">
+                            <div class="w-14 h-14 rounded-full bg-accent-light flex items-center justify-center text-accent group-hover:bg-accent group-hover:text-white transition-colors duration-300">
+                                <i data-lucide="languages" class="w-7 h-7"></i>
+                            </div>
+                        </div>
+                        <div>
+                            <h4 class="text-xl font-bold text-gray-900 mb-2">Translation and Review</h4>
+                            <p class="text-gray-600 leading-relaxed text-lg">
+                                Established core translations that served as the foundation for all subsequent work by internal teams and external vendors. Reviewed translated content and oversaw overall linguistic quality, setting and maintaining a clear quality threshold across the project.
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <!-- 3. LQA -->
+                    <div class="flex items-start group">
+                        <div class="shrink-0 mr-6">
+                            <div class="w-14 h-14 rounded-full bg-accent-light flex items-center justify-center text-accent group-hover:bg-accent group-hover:text-white transition-colors duration-300">
+                                <i data-lucide="bug" class="w-7 h-7"></i>
+                            </div>
+                        </div>
+                        <div>
+                            <h4 class="text-xl font-bold text-gray-900 mb-2">LQA</h4>
+                            <p class="text-gray-600 leading-relaxed text-lg">
+                                Conducted in-house LQA personally for EVE Online, a highly complex game with thousands of distinct systems, interfaces, and gameplay areas requiring verification. Ensured linguistic accuracy, consistency, and in-context readability across the live game environment.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- OTHER PROJECTS GRID (New Section) -->
+    <section id="other-projects" class="py-24 px-6 max-w-7xl mx-auto border-t border-gray-100">
+        <div class="mb-12 text-center md:text-left">
+            <h2 class="text-4xl md:text-5xl font-serif text-gray-900 mb-4">Other Selected Works</h2>
+            <p class="text-xl text-gray-500 font-medium">Translation • LQA • Project Management</p>
+        </div>
+
+        <!-- Grid Layout: Increased columns to make images smaller (3 cols mobile, 5 tablet, 8 desktop) -->
+        <div class="grid grid-cols-3 md:grid-cols-5 lg:grid-cols-8 gap-3 md:gap-4">
+            
+            <!-- 1. Restored Item -->
+            <div class="aspect-[3/4] bg-gray-100 rounded-xl overflow-hidden shadow-sm hover:shadow-lg hover:scale-105 transition-all duration-300 group cursor-pointer relative">
+                <img src="https://cdn2.steamgriddb.com/thumb/66152ed2afe7b3ca467f77069b7b59d0.jpg" alt="Selected Work" class="w-full h-full object-cover absolute inset-0">
+            </div>
+
+            <!-- 2. Ragnarok Origin -->
+            <div class="aspect-[3/4] bg-gray-100 rounded-xl overflow-hidden shadow-sm hover:shadow-lg hover:scale-105 transition-all duration-300 group cursor-pointer relative">
+                <img src="https://seagm-media.seagmcdn.com/game_480/4031.jpg?x-oss-process=image/resize,w_360" alt="Ragnarok Origin" class="w-full h-full object-cover absolute inset-0">
+            </div>
+
+            <!-- 3. Anvil -->
+            <div class="aspect-[3/4] bg-gray-100 rounded-xl overflow-hidden shadow-sm hover:shadow-lg hover:scale-105 transition-all duration-300 group cursor-pointer relative">
+                <img src="https://cdn2.steamgriddb.com/thumb/44b343ca2c16068aff6813fcc250e398.jpg" alt="Anvil" class="w-full h-full object-cover absolute inset-0">
+            </div>
+
+            <!-- 4. Harry Potter Magic Awakened -->
+            <div class="aspect-[3/4] bg-gray-100 rounded-xl overflow-hidden shadow-sm hover:shadow-lg hover:scale-105 transition-all duration-300 group cursor-pointer relative">
+                <img src="https://cdn2.steamgriddb.com/thumb/48275392f5b7db75dbd692d35e92689c.jpg" alt="Harry Potter Magic Awakened" class="w-full h-full object-cover absolute inset-0">
+            </div>
+
+            <!-- 5. DJMax Respect V -->
+            <div class="aspect-[3/4] bg-gray-100 rounded-xl overflow-hidden shadow-sm hover:shadow-lg hover:scale-105 transition-all duration-300 group cursor-pointer relative">
+                <img src="https://cdn2.steamgriddb.com/thumb/4fc942e1410665a98c520f6eebccdb43.jpg" alt="DJMax Respect V" class="w-full h-full object-cover absolute inset-0">
+            </div>
+
+            <!-- 6. Super People -->
+            <div class="aspect-[3/4] bg-gray-100 rounded-xl overflow-hidden shadow-sm hover:shadow-lg hover:scale-105 transition-all duration-300 group cursor-pointer relative">
+                <img src="https://cdn2.steamgriddb.com/thumb/f4d6a94f12601644ea59635b96c7aa32.jpg" alt="Super People" class="w-full h-full object-cover absolute inset-0">
+            </div>
+
+            <!-- 7. Astro Kings -->
+            <div class="aspect-[3/4] bg-gray-100 rounded-xl overflow-hidden shadow-sm hover:shadow-lg hover:scale-105 transition-all duration-300 group cursor-pointer relative">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSvpW7ZlxW7fJu7kEAKRIHiXJCUjp1SIRgRhw&s" alt="Astro Kings" class="w-full h-full object-cover absolute inset-0">
+            </div>
+
+            <!-- 8. Gods Raid -->
+            <div class="aspect-[3/4] bg-gray-100 rounded-xl overflow-hidden shadow-sm hover:shadow-lg hover:scale-105 transition-all duration-300 group cursor-pointer relative">
+                <img src="https://cdn2.steamgriddb.com/thumb/fbb9baef00bf704f17bdb547b2a7d916.jpg" alt="Gods Raid" class="w-full h-full object-cover absolute inset-0">
+            </div>
+
+            <!-- 9. Cats & Soup -->
+            <div class="aspect-[3/4] bg-gray-100 rounded-xl overflow-hidden shadow-sm hover:shadow-lg hover:scale-105 transition-all duration-300 group cursor-pointer relative">
+                <img src="https://cdn2.steamgriddb.com/thumb/87ffca654cf82647ebffd50bbec31d28.jpg" alt="Cats & Soup" class="w-full h-full object-cover absolute inset-0">
+            </div>
+
+            <!-- 10. Kingdom -->
+            <div class="aspect-[3/4] bg-gray-100 rounded-xl overflow-hidden shadow-sm hover:shadow-lg hover:scale-105 transition-all duration-300 group cursor-pointer relative">
+                <img src="https://cdn2.steamgriddb.com/thumb/230df6876eb147c7663065171e62b985.jpg" alt="Selected Work" class="w-full h-full object-cover absolute inset-0">
+            </div>
+
+            <!-- 11. Gran Saga -->
+            <div class="aspect-[3/4] bg-gray-100 rounded-xl overflow-hidden shadow-sm hover:shadow-lg hover:scale-105 transition-all duration-300 group cursor-pointer relative">
+                <img src="https://images.igdb.com/igdb/image/upload/t_cover_big/co8scl.webp" alt="Selected Work" class="w-full h-full object-cover absolute inset-0">
+            </div>
+
+            <!-- 12. Guardian Tales -->
+            <div class="aspect-[3/4] bg-gray-100 rounded-xl overflow-hidden shadow-sm hover:shadow-lg hover:scale-105 transition-all duration-300 group cursor-pointer relative">
+                <img src="https://cdn2.steamgriddb.com/thumb/a1e19f4b3b361936e8f079cb77c7edd4.jpg" alt="Selected Work" class="w-full h-full object-cover absolute inset-0">
+            </div>
+
+            <!-- 13. Seven Knights -->
+            <div class="aspect-[3/4] bg-gray-100 rounded-xl overflow-hidden shadow-sm hover:shadow-lg hover:scale-105 transition-all duration-300 group cursor-pointer relative">
+                <img src="https://cdn2.steamgriddb.com/thumb/a526cf98a75561b0ac2cb66001e64468.jpg" alt="Selected Work" class="w-full h-full object-cover absolute inset-0">
+            </div>
+
+            <!-- 14. Odin -->
+            <div class="aspect-[3/4] bg-gray-100 rounded-xl overflow-hidden shadow-sm hover:shadow-lg hover:scale-105 transition-all duration-300 group cursor-pointer relative">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8f/Odin_logo.jpg/500px-Odin_logo.jpg" alt="Selected Work" class="w-full h-full object-cover absolute inset-0">
+            </div>
+
+            <!-- 15. Ni no Kuni -->
+            <div class="aspect-[3/4] bg-gray-100 rounded-xl overflow-hidden shadow-sm hover:shadow-lg hover:scale-105 transition-all duration-300 group cursor-pointer relative">
+                <img src="https://cdn2.steamgriddb.com/thumb/d1ad6f548d547605ca9b8e2de00b407f.jpg" alt="Selected Work" class="w-full h-full object-cover absolute inset-0">
+            </div>
+
+            <!-- 16. Second Country -->
+            <div class="aspect-[3/4] bg-gray-100 rounded-xl overflow-hidden shadow-sm hover:shadow-lg hover:scale-105 transition-all duration-300 group cursor-pointer relative">
+                <img src="https://cdn2.steamgriddb.com/thumb/f269633b6e6a92b3fccc3ac0f7f29546.png" alt="Selected Work" class="w-full h-full object-cover absolute inset-0">
+            </div>
+
+            <!-- 17. Dark Sword -->
+            <div class="aspect-[3/4] bg-gray-100 rounded-xl overflow-hidden shadow-sm hover:shadow-lg hover:scale-105 transition-all duration-300 group cursor-pointer relative">
+                <img src="https://www.goha.ru/s/E:N2/7U/usKT9JdwvY.jpg" alt="Selected Work" class="w-full h-full object-cover absolute inset-0">
+            </div>
+
+            <!-- 18. Solo Leveling -->
+            <div class="aspect-[3/4] bg-gray-100 rounded-xl overflow-hidden shadow-sm hover:shadow-lg hover:scale-105 transition-all duration-300 group cursor-pointer relative">
+                <img src="https://cdn2.steamgriddb.com/thumb/9d3ab205f1b9d5fbceddda9d1ef25920.jpg" alt="Selected Work" class="w-full h-full object-cover absolute inset-0">
+            </div>
+
+            <!-- 19. Undecember -->
+            <div class="aspect-[3/4] bg-gray-100 rounded-xl overflow-hidden shadow-sm hover:shadow-lg hover:scale-105 transition-all duration-300 group cursor-pointer relative">
+                <img src="https://cdn2.steamgriddb.com/thumb/cf29ee336b07c0572c810f62f5543525.jpg" alt="Selected Work" class="w-full h-full object-cover absolute inset-0">
+            </div>
+
+            <!-- 20. Traha -->
+            <div class="aspect-[3/4] bg-gray-100 rounded-xl overflow-hidden shadow-sm hover:shadow-lg hover:scale-105 transition-all duration-300 group cursor-pointer relative">
+                <img src="https://cdn2.steamgriddb.com/thumb/4ac3c62102e66efa80378f8e2b13eafa.jpg" alt="Selected Work" class="w-full h-full object-cover absolute inset-0">
+            </div>
+
+            <!-- 21. Dekaron G -->
+            <div class="aspect-[3/4] bg-gray-100 rounded-xl overflow-hidden shadow-sm hover:shadow-lg hover:scale-105 transition-all duration-300 group cursor-pointer relative">
+                <img src="https://cdn2.steamgriddb.com/thumb/9012dbd23c4d2e33be5eccb0e5f72517.jpg" alt="Selected Work" class="w-full h-full object-cover absolute inset-0">
+            </div>
+
+            <!-- 22. Summoners War -->
+            <div class="aspect-[3/4] bg-gray-100 rounded-xl overflow-hidden shadow-sm hover:shadow-lg hover:scale-105 transition-all duration-300 group cursor-pointer relative">
+                <img src="https://cdn2.steamgriddb.com/thumb/50b8f5facc93f5b8f65b97f6e32bff0c.png" alt="Selected Work" class="w-full h-full object-cover absolute inset-0">
+            </div>
+
+            <!-- 23. ArcheAge War -->
+            <div class="aspect-[3/4] bg-gray-100 rounded-xl overflow-hidden shadow-sm hover:shadow-lg hover:scale-105 transition-all duration-300 group cursor-pointer relative">
+                <img src="https://cdn2.steamgriddb.com/thumb/f32455bc1bdb44da9558bdfceb8b255c.jpg" alt="Selected Work" class="w-full h-full object-cover absolute inset-0">
+            </div>
+
+            <!-- 24. Ares -->
+            <div class="aspect-[3/4] bg-gray-100 rounded-xl overflow-hidden shadow-sm hover:shadow-lg hover:scale-105 transition-all duration-300 group cursor-pointer relative">
+                <img src="https://cdn2.steamgriddb.com/thumb/4fc6f867fd2bbaa8565f6721d9ba6230.jpg" alt="Selected Work" class="w-full h-full object-cover absolute inset-0">
+            </div>
+
+            <!-- 25. ROM -->
+            <div class="aspect-[3/4] bg-gray-100 rounded-xl overflow-hidden shadow-sm hover:shadow-lg hover:scale-105 transition-all duration-300 group cursor-pointer relative">
+                <img src="https://cdn2.steamgriddb.com/thumb/b502fe804c637a4186c238baa709d320.jpg" alt="Selected Work" class="w-full h-full object-cover absolute inset-0">
+            </div>
+
+            <!-- 26. Night Crows -->
+            <div class="aspect-[3/4] bg-gray-100 rounded-xl overflow-hidden shadow-sm hover:shadow-lg hover:scale-105 transition-all duration-300 group cursor-pointer relative">
+                <img src="https://cdn2.steamgriddb.com/thumb/5e3236540b838e0d97312047e7e780d9.jpg" alt="Selected Work" class="w-full h-full object-cover absolute inset-0">
+            </div>
+
+            <!-- 27. Legend of Ymir -->
+            <div class="aspect-[3/4] bg-gray-100 rounded-xl overflow-hidden shadow-sm hover:shadow-lg hover:scale-105 transition-all duration-300 group cursor-pointer relative">
+                <img src="https://cdn2.steamgriddb.com/thumb/2cf297f54a6678a3d0f225a64a2c6db3.jpg" alt="Selected Work" class="w-full h-full object-cover absolute inset-0">
+            </div>
+
+            <!-- 28. Raven 2 -->
+            <div class="aspect-[3/4] bg-gray-100 rounded-xl overflow-hidden shadow-sm hover:shadow-lg hover:scale-105 transition-all duration-300 group cursor-pointer relative">
+                <img src="https://cdn2.steamgriddb.com/thumb/e20bcd250105509c169741d84e59a52c.jpg" alt="Selected Work" class="w-full h-full object-cover absolute inset-0">
+            </div>
+
+            <!-- 29. Stellar Blade -->
+            <div class="aspect-[3/4] bg-gray-100 rounded-xl overflow-hidden shadow-sm hover:shadow-lg hover:scale-105 transition-all duration-300 group cursor-pointer relative">
+                <img src="https://cdn2.steamgriddb.com/thumb/23e074dd8c6693de55e923ccf961acb9.jpg" alt="Selected Work" class="w-full h-full object-cover absolute inset-0">
+            </div>
+
+            <!-- 30. Crimson Desert -->
+            <div class="aspect-[3/4] bg-gray-100 rounded-xl overflow-hidden shadow-sm hover:shadow-lg hover:scale-105 transition-all duration-300 group cursor-pointer relative">
+                <img src="https://cdn2.steamgriddb.com/thumb/d3977b84fb383b099540ea68d2a270bb.png" alt="Selected Work" class="w-full h-full object-cover absolute inset-0">
+            </div>
+        </div>
+
+        <!-- "And Many More" Indicator -->
+        <div class="mt-16 text-center fade-in-section">
+            <span class="inline-block w-16 h-px bg-gray-300 mb-6"></span>
+            <p class="text-2xl font-serif text-gray-400 italic">...and contributed to over 50+ other titles.</p>
+        </div>
+    </section>
+
+    <!-- APPROACH SECTION -->
+    <section id="approach" class="py-24 px-6 max-w-7xl mx-auto border-t border-gray-100">
+        <div class="grid lg:grid-cols-12 gap-16">
+            <div class="lg:col-span-5 sticky top-32 h-fit fade-in-section">
+                <h2 class="text-4xl md:text-5xl font-serif text-gray-900 mb-8">My Approach</h2>
+                <div class="space-y-6 text-lg text-gray-500 leading-relaxed font-light">
+                    <p>
+                        Localization is more than direct word replacement. It requires accuracy, strong bilingual comprehension, solid writing skills, and speed to deliver a natural experience while preserving the original creative intent.
+                    </p>
+                    <p>
+                        Building on these fundamentals, I bring the following strengths to ensure quality, consistency, and long-term maintainability in game localization:
+                    </p>
+                </div>
+            </div>
+
+            <div class="lg:col-span-7 space-y-6">
+                <!-- Step 1 -->
+                <div class="bg-white border border-gray-100 p-8 rounded-2xl transition-all hover:border-accent group fade-in-section">
+                    <div class="flex items-center mb-4">
+                        <div class="w-10 h-10 rounded-full bg-accent-light flex items-center justify-center text-accent mr-4">
+                            <i data-lucide="gamepad-2" class="w-5 h-5"></i>
+                        </div>
+                        <h3 class="text-2xl font-serif text-gray-900 group-hover:text-accent transition-colors">Understanding the Game</h3>
+                    </div>
+                    <p class="text-gray-600 leading-relaxed">I actively engage with the games I localize to understand their narrative, systems, tone, and gameplay. This allows localization decisions to reflect real player experience rather than isolated text or literal translation.</p>
+                </div>
+                
+                <!-- Step 2 -->
+                <div class="bg-white border border-gray-100 p-8 rounded-2xl transition-all hover:border-accent group fade-in-section" style="transition-delay: 100ms;">
+                    <div class="flex items-center mb-4">
+                        <div class="w-10 h-10 rounded-full bg-accent-light flex items-center justify-center text-accent mr-4">
+                            <i data-lucide="search" class="w-5 h-5"></i>
+                        </div>
+                        <h3 class="text-2xl font-serif text-gray-900 group-hover:text-accent transition-colors">Active Research</h3>
+                    </div>
+                    <p class="text-gray-600 leading-relaxed">I research terminology, narrative context, and industry-specific references to ensure high-quality results that resonate with the player base and remain consistent across the project.</p>
+                </div>
+
+                <!-- Step 3 -->
+                <div class="bg-white border border-gray-100 p-8 rounded-2xl transition-all hover:border-accent group fade-in-section" style="transition-delay: 200ms;">
+                    <div class="flex items-center mb-4">
+                        <div class="w-10 h-10 rounded-full bg-accent-light flex items-center justify-center text-accent mr-4">
+                            <i data-lucide="message-square" class="w-5 h-5"></i>
+                        </div>
+                        <h3 class="text-2xl font-serif text-gray-900 group-hover:text-accent transition-colors">Communication Skills</h3>
+                    </div>
+                    <p class="text-gray-600 leading-relaxed">I collaborate closely with translators, editors, project managers, and developers to align terminology, maintain quality standards, meet deadlines, and keep localization workflows efficient and predictable.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Init Lucide & Scroll Animation Script -->
+    <script>
+        // Intersection Observer for Fade In Animation
+        document.addEventListener("DOMContentLoaded", function() {
+            // Initialize Icons safely
+            if (typeof lucide !== 'undefined') {
+                lucide.createIcons();
+            }
+
+            const observerOptions = {
+                root: null,
+                rootMargin: '0px',
+                threshold: 0.1
+            };
+
+            const observer = new IntersectionObserver((entries, observer) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('is-visible');
+                        observer.unobserve(entry.target); // Only animate once
+                    }
+                });
+            }, observerOptions);
+
+            const fadeElements = document.querySelectorAll('.fade-in-section');
+            fadeElements.forEach(el => observer.observe(el));
+        });
+    </script>
+</body>
+</html>
